@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "name": "Patient",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "patient_name": {
+      "type": "string"
+    },
+    "patient_surname": {
+      "type": "string"
+    },
+    "patient_DOB": {
+      "type": "date"
+    },
+    "queue": {
+      "model": "queue"
+    },
+    "patient_report": {
+      "model": "patient-report"
+    },
+    "patient_email": {
+      "type": "email"
+    },
+    "patient_password": {
+      "type": "password"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "patient"
+    }
+  }
+}

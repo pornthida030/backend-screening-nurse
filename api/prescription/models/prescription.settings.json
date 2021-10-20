@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescriptions",
+  "info": {
+    "name": "Prescription",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medicine_detail": {
+      "type": "text"
+    },
+    "cost": {
+      "type": "float"
+    },
+    "prescription_date": {
+      "type": "date"
+    },
+    "prescription_time": {
+      "type": "time"
+    },
+    "patient": {
+      "model": "patient"
+    }
+  }
+}

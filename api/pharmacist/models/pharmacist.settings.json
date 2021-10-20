@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pharmacists",
+  "info": {
+    "name": "Pharmacist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pharmacist_name": {
+      "type": "string"
+    },
+    "pharmacist_surname": {
+      "type": "string"
+    },
+    "pharmacist_DOB": {
+      "type": "date"
+    },
+    "pharmacist_email": {
+      "type": "email"
+    },
+    "pharmacist_password": {
+      "type": "password"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "pharmacist"
+    }
+  }
+}

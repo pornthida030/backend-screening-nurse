@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "name": "Appointment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appointment_detail": {
+      "type": "text"
+    },
+    "appointment_date": {
+      "type": "date"
+    },
+    "appointment_time": {
+      "type": "time"
+    },
+    "patient": {
+      "model": "patient"
+    }
+  }
+}

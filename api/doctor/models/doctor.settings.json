@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "name": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doctor_name": {
+      "type": "string"
+    },
+    "doctor_surname": {
+      "type": "string"
+    },
+    "doctor_DOB": {
+      "type": "date"
+    },
+    "doctor_email": {
+      "type": "email"
+    },
+    "doctor_password": {
+      "type": "password"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "doctor"
+    }
+  }
+}

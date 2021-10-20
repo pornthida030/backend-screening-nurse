@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pharmacists",
+      "handler": "pharmacist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pharmacists/count",
+      "handler": "pharmacist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pharmacists/:id",
+      "handler": "pharmacist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pharmacists",
+      "handler": "pharmacist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pharmacists/:id",
+      "handler": "pharmacist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pharmacists/:id",
+      "handler": "pharmacist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

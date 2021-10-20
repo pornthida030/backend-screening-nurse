@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patient_reports",
+  "info": {
+    "name": "Patient Report"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "history_DSC": {
+      "type": "text"
+    },
+    "height": {
+      "type": "float"
+    },
+    "weight": {
+      "type": "float"
+    },
+    "tempressure": {
+      "type": "float"
+    },
+    "blood_pressure": {
+      "type": "string"
+    },
+    "allergy": {
+      "type": "text"
+    }
+  }
+}

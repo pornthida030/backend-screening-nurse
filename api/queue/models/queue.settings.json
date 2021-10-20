@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "queues",
+  "info": {
+    "name": "Queue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "queue_room": {
+      "type": "string"
+    },
+    "queue_date": {
+      "type": "date"
+    },
+    "queue_time": {
+      "type": "time"
+    }
+  }
+}

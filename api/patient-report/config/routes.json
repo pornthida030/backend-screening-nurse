@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/patient-reports",
+      "handler": "patient-report.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/patient-reports/count",
+      "handler": "patient-report.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/patient-reports/:id",
+      "handler": "patient-report.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/patient-reports",
+      "handler": "patient-report.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/patient-reports/:id",
+      "handler": "patient-report.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/patient-reports/:id",
+      "handler": "patient-report.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nurses",
+  "info": {
+    "name": "Nurse",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nurse_name": {
+      "type": "string"
+    },
+    "nurse_surname": {
+      "type": "string"
+    },
+    "nurse_DOB": {
+      "type": "date"
+    },
+    "nurse_email": {
+      "type": "email"
+    },
+    "nurse_password": {
+      "type": "password"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "nurse"
+    }
+  }
+}
