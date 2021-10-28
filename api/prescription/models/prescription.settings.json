@@ -24,8 +24,9 @@
     "prescription_time": {
       "type": "time"
     },
-    "patient": {
-      "model": "patient"
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

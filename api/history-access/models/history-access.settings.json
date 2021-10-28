@@ -1,25 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "appointments",
+  "collectionName": "history_accesses",
   "info": {
-    "name": "Appointment",
-    "description": ""
+    "name": "History_access"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "appointment_detail": {
-      "type": "text"
+    "access_status": {
+      "type": "string"
     },
-    "appointment_date": {
+    "access_date": {
       "type": "date"
     },
-    "appointment_time": {
-      "type": "time"
+    "access_time": {
+      "type": "string"
     },
     "user_id": {
       "plugin": "users-permissions",
