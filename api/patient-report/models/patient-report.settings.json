@@ -37,6 +37,10 @@
     "nurse_id": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "patient_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
