@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "patient_reports",
   "info": {
-    "name": "Patient Report"
+    "name": "Patient Report",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,14 @@
     },
     "allergy": {
       "type": "text"
+    },
+    "doctor_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "nurse_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
