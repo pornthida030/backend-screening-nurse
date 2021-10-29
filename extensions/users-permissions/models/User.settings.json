@@ -70,6 +70,14 @@
     },
     "user_DOB": {
       "type": "date"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "Female",
+        "Man",
+        "Unidentifed"
+      ]
     }
   }
 }
