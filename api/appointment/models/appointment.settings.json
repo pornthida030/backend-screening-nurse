@@ -24,6 +24,9 @@
     "user_id": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "docter_appointment": {
+      "type": "string"
     }
   }
 }
