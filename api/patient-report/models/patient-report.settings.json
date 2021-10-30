@@ -44,6 +44,12 @@
     },
     "appointment": {
       "model": "appointment"
+    },
+    "patient_status": {
+      "type": "string"
+    },
+    "medicines": {
+      "type": "text"
     }
   }
 }
