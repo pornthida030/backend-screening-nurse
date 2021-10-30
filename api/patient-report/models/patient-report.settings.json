@@ -41,6 +41,9 @@
     "patient_id": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "appointment": {
+      "model": "appointment"
     }
   }
 }
